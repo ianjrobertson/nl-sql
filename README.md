@@ -1,7 +1,23 @@
 # CS 452: Natural Language SQL
 
 ## System Descripription: 
-#### Generates natural language answers from natural language questions using SQLite database and OpenAI API. 
+
+### How to Run:
+1. Install Rust if you don't have it: https://rustup.rs — follow the on-screen instructions, then restart your terminal.
+2. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd nl-sql
+   ```
+3. Copy the example env file and fill in your values:
+   ```bash
+   cp .env.example .env
+   ```
+   At minimum, set your `OPENAI_API_KEY`. See `.env.example` for all available options.
+4. Run the app:
+   ```bash
+   cargo run
+   ```
 
 ### Tech Stack:
 I used Rust with tokio for async. I used sqlite for the db, and OpenAI API for NL processing. 
