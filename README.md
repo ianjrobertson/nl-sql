@@ -1,6 +1,7 @@
 # CS 452: Natural Language SQL
 
-## System Descripription: Generates natural language answers from natural language questions using SQLite database and OpenAI API. 
+## System Descripription: 
+#### Generates natural language answers from natural language questions using SQLite database and OpenAI API. 
 
 ### Tech Stack:
 I used Rust with tokio for async. I used sqlite for the db, and OpenAI API for NL processing. 
