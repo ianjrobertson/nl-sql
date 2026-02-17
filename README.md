@@ -9,12 +9,22 @@
    git clone <repo-url>
    cd nl-sql
    ```
-3. Copy the example env file and fill in your values:
+3. Install SQLite if you don't have it:
+   - macOS: `brew install sqlite`
+   - Ubuntu/Debian: `sudo apt install sqlite3`
+   - Windows: download from https://sqlite.org/download.html
+
+4. Generate the database from the seed file:
+   ```bash
+   sqlite3 data.db < seed.sql
+   ```
+
+5. Copy the example env file and fill in your values:
    ```bash
    cp .env.example .env
    ```
    At minimum, set your `OPENAI_API_KEY`. See `.env.example` for all available options.
-4. Run the app:
+6. Run the app:
    ```bash
    cargo run
    ```
